@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice</title>
+  </head>
+  <body>
+    <button>Click Me</button>
+    <script>
+      function greeting(name) {
+        console.log('Hello ' + name);
+      }
+      function toUpper(upperName) {
+        console.log(upperName.toUpperCase());
+      }
+      greeting('Simon');
+      toUpper('Simon')
+
+      let upperCase = [];
+      upperCase.push('hello');
+      upperCase.push('world');
+
+      upperCase.forEach(function(toUpper) {
+        let element = document.createElement('div');
+        element.innerText = toUpper.toUpperCase();
+        document.body.appendChild(element);
+      })
+
+
+
+    </script>
+  </body>
+</html>
